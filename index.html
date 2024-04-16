@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Album.html</title>
+</head> 
+<style>    
+.art{   
+    background: linear-gradient(to bottom, #000000, #680505);
+    height: 280px;
+        padding: 20px;  
+}   
+.art img{ 
+    height: 220px; 
+    border-radius: 50%; 
+    margin-left: 20px; 
+    margin-top: 48px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#name{ 
+   position: absolute; 
+   top: 120px; 
+   left: 320px; 
+   color: rgb(255, 255, 255); 
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+   font-size: 63px; 
+   font-weight: 900;
+}
+.songs h2{ 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    color: rgb(184, 178, 178); 
+    margin-left: 5px;
+}
+    
+    .song{  
+        margin: 5px; 
+        border-radius: 5px; 
+        color: white; 
+        padding: 5px;    
+        
+    }    
+    .song{  
+        align-content: center;
+    } 
+    .art p { 
+        color: white; 
+        position: absolute; 
+        top: 245px; 
+        left: 340px;  
+        font-weight: 900; 
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+        font-size: small;
+    }    
+
+   .song-item{ 
+     display: flex;  
+     position: relative; 
+     top: 20px;
+     padding: 5px;  
+     margin-top: 12px; 
+     border-radius: 12px;
+   }   
+   .song-item img{ 
+    height: 44px;  
+    width: 43px; 
+    margin-left: 12px;
+   }
+   .song-item:hover{ 
+    background-color: rgba(56, 54, 54, 0.5);
+   } 
+   .song-item:hover .duration{ 
+    color: white;
+   } 
+   .song-item:hover #views{ 
+    color: white; 
+    font-weight: 500;
+   }
+   .song-item p {  
+    position: absolute;
+    margin-top: 17px;  
+    right: 420px; 
+    color: rgb(179, 174, 174);
+   }    
+
+   #songs{  
+    margin-top: -20px;  
+    background: linear-gradient(to bottom, #740303, #2c0000, #070000);
+
+   }  
+   #songname{ 
+    margin-top: 15px; 
+    width: 180px; 
+    color: white; 
+    margin-left: 15px;
+   }
+   #songs h2{  
+    position: relative;
+    top: 20px;  
+    color: rgb(255, 255, 255);
+    left: 15px; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    font-weight: 900; 
+    font-size: x-large; 
+   } 
+   .duration{  
+    margin-top: 18px;
+    margin-left: 1030px; 
+    color: rgb(179, 174, 174);
+   }
+</style>
+<body onload="simulateLoadingDelay()">    
+    
+    <div class="art">    
+        <img src="https://i1.sndcdn.com/artworks-WroyyCe9eAWpwzcH-yEEIng-t500x500.jpg" alt="">
+     <h1 id="name"> Talha Anjum </h1> 
+     <p> 355,489 Monthly listeners </p>
+    </div>
+     <div id="songs"> 
+        <h2>Popular</h2> 
+        
+     </div>   
+</body> 
+<script src="album.js"></script>
+</html>
