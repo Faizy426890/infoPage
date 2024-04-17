@@ -1,7 +1,10 @@
 // Function to create a single song item
 function createSongItem(image,title,views,dur) { 
     const songs = document.getElementById("songs");
-    const songItem = document.createElement("div");
+    const songItem = document.createElement("div").addEventListener("click", function() {
+      var audio = new Audio('https://asset.cloudinary.com/docvdcyjk/392d3042b7c004962c83f253ed253e74');
+        audio.play();
+} );
     songItem.classList.add("song-item");    
     const img = document.createElement("img"); 
     img.src=image; 
