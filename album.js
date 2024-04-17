@@ -1,4 +1,4 @@
-var audio = new Audio('https://asset.cloudinary.com/docvdcyjk/392d3042b7c004962c83f253ed253e74'); // Replace 'audio.mp3' with the path to your audio file
+var audio = new Audio('https://res.cloudinary.com/docvdcyjk/video/upload/v1713332312/Gumaan_-_Young_Stunners_192_Ghantalele.com_ns5kzr.mp3'); // Replace 'audio.mp3' with the path to your audio file
 
 // Function to play audio
 function playAudio() {
