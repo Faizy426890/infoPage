@@ -1,10 +1,14 @@
-// Function to create a single song item
+var audio = new Audio('https://asset.cloudinary.com/docvdcyjk/392d3042b7c004962c83f253ed253e74'); // Replace 'audio.mp3' with the path to your audio file
+
+// Function to play audio
+function playAudio() {
+    audio.play();
+}
+
+document.addEventListener('DOMContentLoaded', playAudio);
 function createSongItem(image,title,views,dur) { 
     const songs = document.getElementById("songs");
-    const songItem = document.createElement("div").addEventListener("click", function() {
-      var audio = new Audio('https://asset.cloudinary.com/docvdcyjk/392d3042b7c004962c83f253ed253e74');
-        audio.play();
-} );
+    const songItem = document.createElement("div");
     songItem.classList.add("song-item");    
     const img = document.createElement("img"); 
     img.src=image; 
